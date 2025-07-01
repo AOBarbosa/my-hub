@@ -8,7 +8,7 @@ import { UserCard } from '@/components/commons/user-card'
 export default async function ProfilePage({
   params,
 }: {
-  params: { profileId: string }
+  params: Promise<{ profileId: string }>
 }) {
   const { profileId } = await params
 
